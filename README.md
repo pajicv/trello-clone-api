@@ -29,6 +29,12 @@ npx knex seed:run --knexfile knex-init.ts
 npm install
 ```
 
+### Run tests
+
+```shell
+npm test
+```
+
 ### Run application
 
 - Development
@@ -49,5 +55,5 @@ npm start
 - use nodemon for dev environment
 - validate request params, for example, title can't be empty string
 - add error messages when try to edit/delete non existing task
-- add unit tests
+- add more unit tests
 
