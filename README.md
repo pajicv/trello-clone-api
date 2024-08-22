@@ -28,11 +28,16 @@ INSERT INTO public.users(username, email)
 
 - import file `trello-clone.postman_collection.json`
 
+### Install dependencies
+
+```shell
+npm install
+```
+
 ### Run application
 
 ```shell
-npx tsc
-node dist/server.js
+npm start
 ```
 
 ### To Do
@@ -40,5 +45,5 @@ node dist/server.js
 - add authentication
 - add unit tests
 - handle unassigned task
-- 
+- add error messages when try to edit/delete non existing task
 
