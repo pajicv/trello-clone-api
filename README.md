@@ -9,6 +9,8 @@
 
 ### Set up database
 
+Create database `trello_clone`
+
 Run migrations
 
 ```shell
