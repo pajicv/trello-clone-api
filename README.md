@@ -1,3 +1,8 @@
+### Tech Stack
+
+- Node.js v18.18.0
+- PostgreSQL 14
+
 ### Set up environment
 
 - create `.env` file in the root dir based on `.env.example`
