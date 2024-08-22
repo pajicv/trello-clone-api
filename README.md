@@ -1,7 +1,7 @@
 
 ### Set up environment
 
-- create .env file in the root dir based on .env.example
+- create `.env` file in the root dir based on `.env.example`
 
 ### Set up database
 
@@ -24,6 +24,10 @@ INSERT INTO public.users(username, email)
 INSERT INTO public.users(username, email)
 	VALUES ('someone', 'someone@gmail.com');
 ```
+
+### Postman Collection
+
+- import file `trello-clone.postman_collection.json`
 
 ### To Do
 
