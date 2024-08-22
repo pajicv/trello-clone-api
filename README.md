@@ -11,24 +11,12 @@
 
 Create database `trello_clone`
 
-Run migrations
+Run migrations and seeds
 
 ```shell
 npx knex migrate:latest --knexfile knex-init.ts
-```
 
-``` sql
--- statuses
-INSERT INTO public.statuses(name) VALUES ('Todo');
-INSERT INTO public.statuses(name) VALUES ('In Progress');
-INSERT INTO public.statuses(name) VALUES ('Done');
-
--- users
-INSERT INTO public.users(username, email)
-	VALUES ('pajicv', 'pajicv@gmail.com');
-	
-INSERT INTO public.users(username, email)
-	VALUES ('someone', 'someone@gmail.com');
+npx knex seed:run --knexfile knex-init.ts
 ```
 
 ### Postman Collection
