@@ -14,7 +14,7 @@ Create database `trello_clone`
 Run migrations
 
 ```shell
-npx knex migrate:latest --knexfile knex-init.ts
+npx knex migrate:latest --knexfile src/knex-init.ts
 ```
 
 ``` sql
