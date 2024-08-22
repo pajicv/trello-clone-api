@@ -1,4 +1,3 @@
-
 ### Set up environment
 
 - create `.env` file in the root dir based on `.env.example`
@@ -29,9 +28,17 @@ INSERT INTO public.users(username, email)
 
 - import file `trello-clone.postman_collection.json`
 
+### Run application
+
+```shell
+npx tsc
+node dist/server.js
+```
+
 ### To Do
 
 - add authentication
 - add unit tests
-- ...
+- handle unassigned task
+- 
 
