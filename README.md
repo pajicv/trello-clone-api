@@ -46,8 +46,8 @@ npm start
 
 ### To Do
 
+- use nodemon for dev environment
 - add authentication
 - add unit tests
-- handle unassigned task
 - add error messages when try to edit/delete non existing task
 
