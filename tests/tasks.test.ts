@@ -20,6 +20,7 @@ describe('GET /tasks', () => {
         const response = await request(app).get('/api/tasks');
         expect(response.status).toBe(200);
         expect(response.body.length).toBeGreaterThan(0);
+        expect(response.body.map((task: { id: number }) => task.id)).toStrictEqual([1, 2, 3]);
     });
 });
 
@@ -28,8 +29,8 @@ describe('POST /tasks', () => {
         const newTask = {
             title: 'Test Task',
             description: 'This is a test task.',
-            status_id: 1, // Assuming status_id 1 exists
-            assigned_user_id: 1, // Assuming user_id 1 exists
+            status_id: 1,
+            assigned_user_id: 1,
         };
         const response = await request(app).post('/api/tasks').send(newTask);
         expect(response.status).toBe(201);
@@ -40,8 +41,8 @@ describe('POST /tasks', () => {
         const newTask = {
             title: 'Task with wrong status',
             description: 'some desc...',
-            status_id: 4
-            // status_id 4 is not valid value
+            status_id: 4, // status_id 4 is not valid value
+            assigned_user_id: 1
         };
         const response = await request(app).post('/api/tasks').send(newTask);
         expect(response.status).toBe(500);
@@ -65,7 +66,7 @@ describe('PUT /tasks/:id', () => {
 
 describe('DELETE /tasks/:id', () => {
     it('should delete an existing task', async () => {
-        const response = await request(app).delete('/api/tasks/6'); // Assuming task with ID 1 exists
+        const response = await request(app).delete('/api/tasks/1');
         expect(response.status).toBe(204);
     });
 });
