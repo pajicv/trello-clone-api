@@ -43,16 +43,7 @@ npm install
 
 ### Run application
 
-- Development
-
 ```shell
-npm run dev
-```
-
-- Production
-
-```shell
-npm run build
 npm start
 ```
 
