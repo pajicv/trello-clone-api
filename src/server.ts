@@ -1,6 +1,9 @@
+import dotenv from "dotenv";
 import express, { Application } from 'express';
 import bodyParser from 'body-parser';
 import taskRoutes from './routes/tasks';
+
+dotenv.config();
 
 const app: Application = express();
 const PORT = process.env.PORT || 3000;
